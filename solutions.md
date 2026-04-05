@@ -185,12 +185,12 @@ users = pd.read_csv(url)
 
 ### Step 3. Assign it to a variable called drinks.
 ```python
-drinks = users
+drinks = pd.read_csv(url, sep=",")
 ```
 
 ### Step 4. Which continent drinks more beer on average?
 ```python
-drinks.groupby('continent').agg({ 'beer_servings': 'mean' })
+drinks.groupby('continent').agg({ 'beer_servings': 'mean' }).sort_values("beer_servings", ascending=False)
 ```
 
 ### Step 5. For each continent print the statistics for wine consumption.
