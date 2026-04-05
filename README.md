@@ -1,2 +1,0 @@
-# DataWranglingReport_exercises
-
